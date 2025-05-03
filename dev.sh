@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker compose -f docker-compose.prod.yml up --build -d
+pnpm db:push
