@@ -1,0 +1,54 @@
+# Git files
+.git
+.gitignore
+
+# Node modules - Ignore all instances
+**/node_modules
+node_modules
+
+# Turborepo cache
+.turbo
+
+# Build outputs
+**/dist
+**/build
+**/.next
+**/.output
+**/.expo
+**/.vercel
+
+# Env files (keep examples)
+.env
+.env.*
+!.env.example
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE configuration folders
+.vscode
+.idea
+
+# Dockerfiles (if building from root, they aren't needed inside the context)
+Dockerfile
+**/Dockerfile
+
+# Test results and coverage
+coverage
+junit.xml
+
+# Temporary files and folders
+tmp
+temp
+
+# Editor config
+.editorconfig
