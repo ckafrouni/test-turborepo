@@ -5,14 +5,16 @@
     "topo": {
       "dependsOn": ["^topo"]
     },
+    "install": {
+      "cache": false
+    },
     "build": {
       "dependsOn": ["^build"],
       "outputs": [".cache/tsbuildinfo.json", "dist/**"]
     },
     "dev": {
-      "dependsOn": ["^dev"],
       "cache": false,
-      "persistent": false
+      "persistent": true
     },
     "format": {
       "outputs": [".cache/.prettiercache"],
