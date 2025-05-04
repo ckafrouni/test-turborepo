@@ -1,6 +1,7 @@
 # Git files
 .git
 .gitignore
+.venv
 
 # Node modules - Ignore all instances
 **/node_modules
