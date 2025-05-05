@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "preinstall": "[ -d .venv ] || python3 -m venv .venv",
     "install": ".venv/bin/pip install -r requirements.txt",
     "clean": "git clean -xdf .venv venv __pycache__ .turbo node_modules",
     "dev": ".venv/bin/flask --app application run --host=0.0.0.0 --port 5001"
