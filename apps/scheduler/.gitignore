@@ -1,8 +1,0 @@
-.DS_Store
-.env
-setup.sh
-test_operation_mapping.py
-test_resource_scheduler.py
-venv
-.venv
-__pycache__

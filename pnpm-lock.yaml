@@ -113,9 +113,7 @@ importers:
         specifier: 'catalog:'
         version: 5.8.3
 
-  apps/fastapi: {}
-
-  apps/nextjs:
+  apps/studio:
     dependencies:
       '@acme/api':
         specifier: workspace:*
@@ -205,8 +203,6 @@ importers:
       typescript:
         specifier: 'catalog:'
         version: 5.8.3
-
-  apps/scheduler: {}
 
   packages/api:
     dependencies:
@@ -6608,9 +6604,6 @@ packages:
     peerDependencies:
       zod: ^3.18.0
 
-  zod@3.24.2:
-    resolution: {integrity: sha512-lY7CDW43ECgW9u1TcT3IoXHflywfVqDYze4waEz812jR/bZ8FHDsl7pFQoSZTz5N+2NqRXs8GBwnAwo3ZNxqhQ==}
-
   zod@3.24.3:
     resolution: {integrity: sha512-HhY1oqzWCQWuUqvBFnsyrtZRhyPeR7SUGv+C4+MsisMuVfSPx8HpwWqH8tRahSlt6M3PiFAcoeFhZAqIXTxoSg==}
 
@@ -9845,8 +9838,8 @@ snapshots:
       '@babel/plugin-transform-private-methods': 7.25.9(@babel/core@7.27.1)
       eslint: 9.25.1(jiti@2.4.2)
       hermes-parser: 0.25.1
-      zod: 3.24.2
-      zod-validation-error: 3.4.0(zod@3.24.2)
+      zod: 3.24.3
+      zod-validation-error: 3.4.0(zod@3.24.3)
     transitivePeerDependencies:
       - supports-color
 
@@ -13086,10 +13079,8 @@ snapshots:
       compress-commons: 6.0.2
       readable-stream: 4.7.0
 
-  zod-validation-error@3.4.0(zod@3.24.2):
+  zod-validation-error@3.4.0(zod@3.24.3):
     dependencies:
-      zod: 3.24.2
-
-  zod@3.24.2: {}
+      zod: 3.24.3
 
   zod@3.24.3: {}
